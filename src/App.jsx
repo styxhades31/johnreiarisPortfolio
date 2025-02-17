@@ -1,11 +1,16 @@
 import React from "react";
-import Profile from "./Profile.jsx";
+import Hero from "./HeroAris";
+import Profile from "./Profile";
+
 import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <Profile />
+      <Hero />
+      <main className="content">
+        <Profile />
+      </main>
     </div>
   );
 }
