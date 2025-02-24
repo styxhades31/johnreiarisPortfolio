@@ -1,16 +1,20 @@
 import React from "react";
 import "./App.css";
 
-
 const Hero = () => {
   return (
     <section className="hero">
+      {/* Hero Overlay */}
       <div className="hero-overlay"></div>
+
+      {/* Hero Content */}
       <div className="hero-content">
-        <h1>Hi! I'm Johnrei</h1>
-        <p>I'm a passionate web developer, specializing in building backend solutions with PHP & MySQL.</p>
+        <h1 className="glitch">Hi! I'm Johnrei</h1>
+        <p className="quote">"Code is like a game. Strategize, debug, and level up." 💻🔥</p>
         <div className="profile-container">
-        <img src="/profile.jpg"  alt="Johnrei" className="profile-pic" />
+          <div className="profile-border">
+            <img src="/profile.jpg" alt="Johnrei" className="profile-pic" />
+          </div>
         </div>
       </div>
     </section>
