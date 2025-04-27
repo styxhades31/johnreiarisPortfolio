@@ -9,8 +9,14 @@ import { AiOutlineAlignLeft } from "react-icons/ai";
 import { GiGems } from "react-icons/gi";
 import { AiOutlineLaptop } from "react-icons/ai";
 import "./App.css";
-import slashGif from './slash.gif'; 
-import monsterGif from './monster.gif'; 
+import slashGif from './assets/slash.gif';
+import blogImage from './assets/blogaris.png';
+import calcuImage from './assets/calcu.png';
+import pokemonImage from './assets/Pokemonaris.png';
+
+
+
+import monsterGif from './assets/monsteraris.gif'; 
 
 
 
@@ -143,11 +149,12 @@ function App() {
   </h2>
   <div className="card">
     <a href="https://illustrious-semifreddo-20eaf7.netlify.app/" target="_blank" rel="noopener noreferrer">
-      <img src="/blogaris.png" alt="Blog Post" />
+    <img src={blogImage} alt="Blog Post" />
       
     </a>
   </div>
 </section>
+
 
 
 
@@ -158,12 +165,12 @@ function App() {
   </h2>
   <div className="project-cards">
   <a href="https://sciencalu.netlify.app/" target="_blank" rel="noopener noreferrer" className="card1">
-    <img src="/calcu.png" alt="Project 1" />
+  <img src={calcuImage} alt="Project 1" />
     <h3>Scientific Calculator</h3>
   </a>
 
     <a href="https://clever-custard-c3d08e.netlify.app/" target="_blank" rel="noopener noreferrer" className="card1">
-      <img src="/Pokemonaris.PNG" alt="Project 2" />
+    <img src={pokemonImage} alt="Project 2" />
       <h3>PokemonPedia</h3>
      
     </a>
