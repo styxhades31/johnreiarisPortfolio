@@ -170,7 +170,7 @@ function App() {
   </a>
 
     <a href="https://clever-custard-c3d08e.netlify.app/" target="_blank" rel="noopener noreferrer" className="card1">
-    <img src={pokemonImage} alt="Project 2" />
+     <img src="/Pokemonaris.png" alt="Project 2" />
       <h3>PokemonPedia</h3>
      
     </a>
