@@ -10,12 +10,6 @@ import { GiGems } from "react-icons/gi";
 import { AiOutlineLaptop } from "react-icons/ai";
 import "./App.css";
 import slashGif from './assets/slash.gif';
-import blogImage from './assets/blogaris.png';
-import calcuImage from './assets/calcu.png';
-import pokemonImage from './assets/Pokemonaris.png';
-
-
-
 import monsterGif from './assets/monsteraris.gif'; 
 
 
