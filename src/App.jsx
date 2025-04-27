@@ -143,7 +143,7 @@ function App() {
   </h2>
   <div className="card">
     <a href="https://illustrious-semifreddo-20eaf7.netlify.app/" target="_blank" rel="noopener noreferrer">
-      <img src="/blogaris.png" alt="Blog Post" />
+      <img src="/blogaris.PNG" alt="Blog Post" />
       
     </a>
   </div>
@@ -158,12 +158,12 @@ function App() {
   </h2>
   <div className="project-cards">
   <a href="https://sciencalu.netlify.app/" target="_blank" rel="noopener noreferrer" className="card1">
-    <img src="/calcu.png" alt="Project 1" />
+    <img src="/calcu.PNG" alt="Project 1" />
     <h3>Scientific Calculator</h3>
   </a>
 
     <a href="https://clever-custard-c3d08e.netlify.app/" target="_blank" rel="noopener noreferrer" className="card1">
-      <img src="/Pokemonaris.png" alt="Project 2" />
+      <img src="/Pokemonaris.PNG" alt="Project 2" />
       <h3>PokemonPedia</h3>
      
     </a>
