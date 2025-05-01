@@ -497,3 +497,61 @@ h2 {
 .animate-delay-3 {
   animation-delay: 0.5s;
 }
+.slash-gif {
+  width: 100px;
+  height: auto;
+  position: relative;
+  top: 30px;
+  right: 43px;
+  z-index: 1;
+}
+
+.monster-gif {
+  width: 100px;
+  height: auto;
+  position: absolute;
+  top: 35px;
+  left: 30px;
+  z-index: 1;
+}
+
+/* Slightly adjust from 768px to 375px */
+@media (max-width: 768px) {
+  .slash-gif {
+    top: 28px; /* moved slightly higher */
+  }
+
+  .monster-gif {
+    top: 31px; /* moved slightly higher */
+  }
+}
+
+@media (max-width: 600px) {
+  .slash-gif {
+    top: 29.6px;
+  }
+
+  .monster-gif {
+    top: 34.6px;
+  }
+}
+
+@media (max-width: 480px) {
+  .slash-gif {
+    top: 25px;
+  }
+
+  .monster-gif {
+    top:28px;
+  }
+}
+
+@media (max-width: 375px) {
+  .slash-gif {
+    top: 24px;
+  }
+
+  .monster-gif {
+    top: 27px;
+  }
+}
