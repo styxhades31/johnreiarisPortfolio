@@ -51,32 +51,17 @@ function App() {
         <section id="about" className="about">
   <div style={{ position: 'relative', display: 'inline-block' }}>
     {/* Slash GIF */}
-    <img 
-      src={slashGif} 
-      alt="Slash Animation" 
-      style={{ 
-        width: '100px',  /* Adjust size to fit */
-        height: 'auto',  /* Maintain aspect ratio */
-        position: 'relative', 
-        top: '30px', 
-        right: '43px', 
-        zIndex: '1', 
-      }} 
-    />
-    
-    {/* Monster GIF */}
-    <img 
-      src={monsterGif} 
-      alt="Monster Animation" 
-      style={{ 
-        width: '100px',  /* Adjust size to fit */
-        height: 'auto',  /* Maintain aspect ratio */
-        position: 'absolute', 
-        top: '35px', 
-        left:'30px', /* Position it to the right of the container */
-        zIndex: '1', 
-      }} 
-    />
+       <img 
+  src={slashGif} 
+  alt="Slash Animation" 
+  className="slash-gif" 
+/>
+
+<img 
+  src={monsterGif} 
+  alt="Monster Animation" 
+  className="monster-gif" 
+/>
     
     {/* Your name */}
     <h2 className="full-name" style={{ position: 'relative', zIndex: '0' }}>
