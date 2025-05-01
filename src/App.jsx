@@ -1,5 +1,5 @@
-import React from "react";
-import { FaFacebook, FaGithub, FaEnvelope } from "react-icons/fa";
+import React, { useState, useEffect } from 'react';
+import { FaFacebook, FaGithub, FaEnvelope, FaLinkedin } from "react-icons/fa";
 import { VscAccount } from "react-icons/vsc";
 import { GiCrossedSwords } from "react-icons/gi";
 import { VscChip } from "react-icons/vsc";
@@ -11,7 +11,7 @@ import { AiOutlineLaptop } from "react-icons/ai";
 import "./App.css";
 import slashGif from './assets/slash.gif';
 import monsterGif from './assets/monsteraris.gif'; 
-
+import { FaCertificate } from 'react-icons/fa'
 
 
 function App() {
@@ -31,14 +31,20 @@ function App() {
       
       <div className="content">
 
-        {/* Intro Section */}
-        <section id="home" className="intro">
-        <h1 className="jumping-text">
-  <span>H</span><span>i</span><span>!</span> <span>&lt;</span><span>I</span><span>'</span><span>m</span> <span>J</span><span>o</span><span>h</span><span>n</span><span>r</span><span>e</span><span>i</span><span>&gt;</span>
-</h1>
-
-          <p>Code is like a game. Strategize, debug and level up.</p>
-        </section>
+      <section id="home" className="intro">
+  <div className="hero-content">
+    <h1 className="jumping-text">
+      <span>H</span><span>i</span><span>!</span> <span>&lt;</span><span>I</span><span>'</span><span>m</span> <span>J</span><span>o</span><span>h</span><span>n</span><span>r</span><span>e</span><span>i</span><span>&gt;</span>
+    </h1>
+    <p>Code is like a game. Strategize, debug, and level up.</p>
+    <div className="scroll-down">
+      <p>Scroll down for more</p>
+      <a href="#about" className="scroll-arrow">
+        &#8595; {/* Down Arrow */}
+      </a>
+    </div>
+  </div>
+</section>
 
         {/* About Me */}
       
@@ -83,8 +89,7 @@ function App() {
     About Me
   </h2>
   <p>
-  Hi there! I'm a passionate backend developer with a knack for building robust systems and APIs. When I'm not coding, I enjoy diving into the world of video editing, creating visually compelling content that tells stories. I’m also a very social person, always up for networking, collaborating, and exchanging ideas with others. Whether it's writing code, editing videos, or engaging in meaningful conversations, I thrive on creativity and connection. Let’s build something amazing together!
-  </p>
+  Hi there! I'm a passionate backend developer with a strong focus on building efficient, scalable systems and APIs. I specialize in server-side logic, database architecture, and creating seamless integrations that power dynamic applications. In addition to my development work, I’m also a  video editor—crafting visually engaging content that brings ideas to life through storytelling. I thrive in collaborative environments, love connecting with others, and am always eager to exchange ideas. Let’s build something impactful together!</p>
 </section>
 
 <section id="skills" className="skills">
@@ -129,12 +134,22 @@ function App() {
 
 <section className="experience">
   <h2>
-    <GiGems style={{ marginRight: '10px',  position: 'relative', top: '3px' }} />
+    <GiGems style={{ marginRight: '10px', position: 'relative', top: '3px' }} />
     Experience
   </h2>
+  <h3 style={{ fontWeight: 'bold', marginTop: '10px', color: '#e0e0e0' }}>
+    CCS - IT Portal AEONFLUX, 2024–2025
+  </h3>
   <p>
-  As the Backend Developer for the CCS-IT Portal, I was responsible for designing and implementing reliable, efficient server-side systems that ensured the platform’s smooth functionality and optimal performance. This role gave me hands-on experience in building scalable and robust backend infrastructure, optimizing processes, and maintaining system integrity across the platform. Through this experience, I honed my skills in server management, data handling, and performance tuning, all while collaborating with cross-functional teams to deliver seamless user experiences.</p>
+    As the Backend Developer for the CCS-IT Portal, I was responsible for designing and implementing reliable,
+    efficient server-side systems that ensured the platform’s smooth functionality and optimal performance. This role
+    gave me hands-on experience in building scalable and robust backend infrastructure, optimizing processes, and
+    maintaining system integrity across the platform. Through this experience, I honed my skills in server management,
+    data handling, and performance tuning, all while collaborating with cross-functional teams to deliver seamless user
+    experiences.
+  </p>
 </section>
+
 
 <section className="blog">
   <h2>
@@ -142,7 +157,7 @@ function App() {
     Blog Posts
   </h2>
   <div className="card">
-    <a href="https://illustrious-semifreddo-20eaf7.netlify.app/" target="_blank" rel="noopener noreferrer">
+    <a href="https://blogpostaris.netlify.app/" target="_blank" rel="noopener noreferrer">
     <img src="/blogaris.png" alt="Blog Post" />
       
     </a>
@@ -172,6 +187,33 @@ function App() {
 </section>
 
 
+    <section className="certificates">
+      <h2>
+        <FaCertificate style={{ marginRight: '10px', position: 'relative', top: '3px' }} />
+        Certificates
+      </h2>
+      <div className="certificate-cards">
+        <a href="https://certificates.simplicdn.net/share/8257148_84818521746093870652.pdf" target="_blank" rel="noopener noreferrer" className="certificate-card">
+          <img src="/introductiontohtml.png" alt="Introduction to HTML" />
+        </a>
+        <a href="https://certificates.simplicdn.net/share/8124728_84818521743514981194.pdf" target="_blank" rel="noopener noreferrer" className="certificate-card">
+          <img src="/introductiontocloudsecurity.png" alt="Introduction to Cloud Security" />
+        </a>
+        <a href="https://certificates.simplicdn.net/share/8236089_84818521746094118602.pdf" target="_blank" rel="noopener noreferrer" className="certificate-card">
+          <img src="/introductiontosql.png" alt="Introduction to SQL" />
+        </a>
+        <a href="https://certificates.simplicdn.net/share/8202548_84818521746094218989.pdf" target="_blank" rel="noopener noreferrer" className="certificate-card">
+          <img src="/introductiontophp.png" alt="Introduction to PHP" />
+        </a>
+        <a href="https://certificates.simplicdn.net/share/8136919_84818521746094311960.pdf" target="_blank" rel="noopener noreferrer" className="certificate-card">
+          <img src="/pythonforbeginners.png" alt="Python for Beginners" />
+        </a>
+        <a href="https://certificates.simplicdn.net/share/8283687_84818521746094435001.pdf" target="_blank" rel="noopener noreferrer" className="certificate-card">
+          <img src="/advancedpython.png" alt="Advanced Python" />
+        </a>
+      </div>
+    </section>
+
         {/* Contact */}
         <section id="contact" className="contact">
           <h2>Let’s connect!</h2>
@@ -181,6 +223,7 @@ function App() {
             <a href="mailto:johnrei@gmail.com" target="_blank" rel="noopener noreferrer"><FaEnvelope /></a>
             <a href="https://www.facebook.com/johnreiaris.atendido.1/" target="_blank" rel="noopener noreferrer"><FaFacebook /></a>
             <a href="https://github.com/styxhades31" target="_blank" rel="noopener noreferrer"><FaGithub /></a>
+            <a href="https://www.linkedin.com/in/johnrei-atendido-1a9410359/" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
           </div>
         </section>
       </div>
